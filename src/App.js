@@ -2,20 +2,22 @@ import { useState } from 'react';
 import './App.css';
 
 function App() {
-  const [todos, setTodos] = useState(['Drink water','Drink coffee','run 10km']);
+  const [todos, setTodos] = useState(['Drink water', 'Drink coffee', 'run 10km']);
   const [input, setInput] = useState('');
 
   const addTodo = (event) => {
-    // this will fire off when we click the button
-    console.log('👾','I am coming!!!');
-    setTodos([...todos, input])
+    event.preventDefault();
+    setTodos([...todos, input]);
+    setInput('');
   }
 
   return (
     <div className="App">
       <h1>ToDo App 🚀 </h1>
-      <input value={input} onChange={event => setInput(event.target.value)}/>
-      <button onClick={addTodo}>Add Todo</button>
+      <form>
+        <input value={input} onChange={event => setInput(event.target.value)} />
+        <button type="submit" onClick={addTodo}>Add Todo</button>
+      </form>
       <ul>
         {todos.map(todo => (
           <li>{todo}</li>
