@@ -7,6 +7,8 @@ import MuiAlert from '@material-ui/lab/Alert';
 
 
 function App() {
+  
+  //Alert Function
   function Alert(props) {
     return <MuiAlert elevation={6} variant="filled" {...props} />;
   }
@@ -17,15 +19,11 @@ function App() {
 
   const addTodo = (event) => {
     event.preventDefault();
+    setOpen(true);
     setTodos([...todos, input]);
     setInput('');
-    setOpen(true);
   }
-  const handleClose = (event, reason) => {
-    if (reason === 'clickaway') {
-      return;
-    }
-
+  const handleClose = () => {
     setOpen(false);
   };
 
