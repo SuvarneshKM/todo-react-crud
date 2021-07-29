@@ -1,11 +1,18 @@
 import { Button, FormControl, InputLabel, Input } from '@material-ui/core';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './App.css';
 import Todo from './Todo';
+import db from './firebase';
 
 function App() {
-  const [todos, setTodos] = useState(['Drink water', 'Drink coffee', 'run 10km']);
+  const [todos, setTodos] = useState([]);
   const [input, setInput] = useState('');
+
+  useEffect(() => {
+    db.collection('todos').onSnapshot(snapshot => {
+      setTodos(snapshot.docs.map(doc => doc.data().todo))
+    })
+  }, []);
 
   const addTodo = (event) => {
     event.preventDefault();
