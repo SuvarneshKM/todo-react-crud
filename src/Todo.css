@@ -1,3 +1,11 @@
-.todo_list {
-    text-align: center;
+.delete {
+    cursor: pointer;
+    margin:5px;
+    padding-left: 10px;
+}
+
+.update {
+    cursor: pointer;
+    margin:5px;
+    padding-right: 10px;
 }
