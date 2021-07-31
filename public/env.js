@@ -1,6 +1,7 @@
 window.env = {
   "GJS_DEBUG_TOPICS": "JS ERROR;JS LOG",
   "LESSOPEN": "| /usr/bin/lesspipe %s",
+  "npm_package_dependencies__material_ui_icons": "^4.11.2",
   "LANGUAGE": "en_IN:en",
   "USER": "j4ck",
   "npm_config_version_commit_hooks": "true",
@@ -55,7 +56,7 @@ window.env = {
   "npm_config_ignore_scripts": "",
   "WINDOWPATH": "2",
   "npm_package_browserslist_development_0": "last 1 chrome version",
-  "PATH": "/tmp/yarn--1627722532412-0.9193327220061995:/home/j4ck/Desktop/reactjs/todo-app/node_modules/.bin:/home/j4ck/.config/yarn/link/node_modules/.bin:/home/j4ck/.yarn/bin:/usr/libexec/lib/node_modules/npm/bin/node-gyp-bin:/usr/lib/node_modules/npm/bin/node-gyp-bin:/usr/bin/node_modules/npm/bin/node-gyp-bin:/home/j4ck/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/lib/jvm/jdk-15.0.2/bin:/usr/lib/jvm/jdk-15.0.2/bin:/home/j4ck/snap/flutter/common/flutter/bin:/usr/lib/jvm/jdk-15.0.2/bin:/home/j4ck/snap/flutter/common/flutter/bin",
+  "PATH": "/tmp/yarn--1627724676443-0.14071037105659112:/home/j4ck/Desktop/reactjs/todo-app/node_modules/.bin:/home/j4ck/.config/yarn/link/node_modules/.bin:/home/j4ck/.yarn/bin:/usr/libexec/lib/node_modules/npm/bin/node-gyp-bin:/usr/lib/node_modules/npm/bin/node-gyp-bin:/usr/bin/node_modules/npm/bin/node-gyp-bin:/home/j4ck/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/lib/jvm/jdk-15.0.2/bin:/usr/lib/jvm/jdk-15.0.2/bin:/home/j4ck/snap/flutter/common/flutter/bin:/usr/lib/jvm/jdk-15.0.2/bin:/home/j4ck/snap/flutter/common/flutter/bin",
   "NODE": "/usr/bin/node",
   "SESSION_MANAGER": "local/xt:@/tmp/.ICE-unix/2550,unix/xt:/tmp/.ICE-unix/2550",
   "INVOCATION_ID": "6147af83dd9c46c184585bc74d543abb",
